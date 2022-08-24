@@ -1,0 +1,230 @@
+@media only screen and (min-width:500px) {
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../img/bg.png);
+    background-repeat: repeat-x;
+}
+.wrapper{
+position: absolute;
+top: 50%;
+left: 50%;
+transform:translate(-50%,-50%);
+}
+.mail{
+width:522px;
+height: 300px;
+background: #fdccc8;
+
+
+position: relative;
+transform-style: preserve-3d;
+cursor: pointer;
+
+}
+.phongbao{
+position: absolute;
+z-index: 7;
+top: 50%;
+left: 50%;
+transform:translate(-50%,-50%);
+}
+.mail:before{
+content: "";
+position: absolute;
+top: 0;
+right: 0;
+border-left: 200px solid transparent;
+border-right: 200px solid #ffcec9;
+border-top: 150px solid transparent;
+border-bottom: 150px solid #ffcec9;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px ;
+
+z-index: 5;
+}
+.mail:after{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    border-left: 200px solid #ffcec9;
+border-right: 200px solid transparent;
+border-top: 150px solid transparent;
+border-bottom: 150px solid #ff5355;
+
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px ;
+z-index: 4;
+}
+.cover:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 260px solid transparent ;
+    border-right: 260px solid transparent ;
+    border-top: 200px solid #ffcec9 ;
+    border-bottom: 200px solid transparent ;
+
+    z-index: 8;
+    transform-origin: top ;
+    transform: rotateX(0deg);
+    transition: all 1s 1s ease;
+}
+.letter{
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    left: 10px;
+    background-image: url(../img/phongbao.png);
+    width: 510px;
+    height: 399px;
+    border-radius: 20px;
+    transition :all 1s ease;
+    display: block;
+        text-align: center;
+        background: #79899200;
+}
+.letter h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: #798992;
+    font-weight: 900;
+}
+.mail:hover .cover:before{
+    transform: rotateX(180deg);
+    transition: all 1s ease;
+    z-index: -1;
+}
+.mail:hover .letter{
+    top: -100px;
+    z-index: 8;
+    transition: all 1s 1s ease;
+}
+.imgLaThu{
+    width:250px ;
+    height:299px;
+}
+}
+@media only screen and (max-width:500px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url(../img/bg.png);
+        background-repeat: repeat-x;
+    }
+    .wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    }
+    .mail{
+    width:332px;
+    height: 200px;
+    background: #fdccc8;
+    
+
+    position: relative;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    }
+    .phongbao{
+        width: 400px;
+    position: absolute;
+    z-index: 7;
+    top: 50%;
+left: 50%;
+transform:translate(-50%,-50%);
+
+    }
+    .mail:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    border-left: 150px solid transparent;
+    border-right: 150px solid #ffcec9;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid #f2aaaa;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px ;
+
+    z-index: 5;
+    
+    }
+    .mail:after{
+        content: "";
+        position: absolute;
+        top:0;
+        left:0;
+        border-left: 150px solid #ffcec9;
+    border-right: 150px solid transparent;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid #ff5355;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px ;
+    
+    z-index: 4;
+    }
+    .cover:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-left: 165px solid transparent ;
+        border-right: 165px solid transparent ;
+        border-top: 150px solid #ffcec9 ;
+        border-bottom: 150px solid transparent ;
+       
+        z-index: 8;
+        transform-origin: top ;
+        transform: rotateX(0deg);
+        transition: all 1s 1s ease;
+    }
+    .letter{
+        position: absolute;
+        z-index: 3;
+        top: 0px;
+        left: 10px;
+        width: 312px;
+        height: 250px;
+        border-radius: 5px;
+        transition :all 1s ease;
+        display: block;
+        text-align: center;
+        background: #79899200;
+    }
+    .letter h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 80px;
+        color: #798992;
+        font-weight: 900;
+    }
+    .mail:hover .cover:before{
+        transform: rotateX(180deg);
+        transition: all 1s ease;
+        z-index: -1;
+    }
+    .mail:hover .letter{
+        top: -80px;
+        z-index: 9;
+        transition: all 1s 1s ease;
+    }
+    .imgLaThu{
+        width:150px ;
+        height:199px;
+    }
+}
